@@ -1,5 +1,8 @@
-trigger:
-- master
+#change the trigger for CD to be run with pull request to any of 
+# of master branch or any branch start with "releaase "
+pr:
+  - master
+  - releases/*
 
 strategy:
   matrix:
